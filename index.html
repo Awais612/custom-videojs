@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video.js Example</title>
+    <!-- Video.js CSS -->
+    <link href="https://vjs.zencdn.net/8.0.4/video-js.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./video-js.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: azure;
+            width: 100vw;
+        }
+
+        .video-container {
+            width: 80%;
+            max-width: 800px;
+        }
+
+        #my-video {
+            width: 60%;
+            height: 260px
+        }
+
+        .vjs-matrix.video-js {
+            color: #00ff00;
+        }
+
+        .vjs-matrix .vjs-big-play-button {
+            border-color: #00ff00;
+        }
+
+        .vjs-matrix .vjs-volume-level,
+        .vjs-matrix .vjs-play-progress,
+        .vjs-matrix .vjs-slider-bar {
+            background: #00ff00;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="video-container">
+        <!-- Video.js Player -->
+        <video id="my-video" class="video-js" controls poster preload="auto" width="100%" height="auto" data-setup="{}">
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+            <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider upgrading to a
+                web browser that
+                <a href="https://videojs.com/html5-video-support/" target="_blank">
+                    supports HTML5 video
+                </a>
+            </p>
+        </video>
+    </div>
+
+    <!-- Video.js JavaScript -->
+    <script src="https://vjs.zencdn.net/8.0.4/video.min.js"></script>
+</body>
+
+</html>
